@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportHeight="12"
+    android:viewportWidth="12">
+
+    <!-- 1.以pivotX和pivotY都是坐标为6点作为中心，以scaleX也即是横向放大1.5倍 -->
+    <group
+        android:pivotX="6"
+        android:pivotY="6"
+        android:scaleX="1.5">
+        <path
+            android:name="iconPath"
+            android:fillColor="@android:color/white"
+            android:pathData="M 4,2.5 L 4,9.5 L 9.5,6 Z" />
+    </group>
+
+</vector>
