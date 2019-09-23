@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="12"
+    android:viewportHeight="12">
+
+    <!-- 3.这个是平移X角度即使横向移动2格 -->
+    <group android:translateX="2" >
+        <path
+            android:name="iconPath"
+            android:fillColor="@android:color/white"
+            android:pathData="M 4,2.5 L 4,9.5 L 9.5,6 Z" />
+    </group>
+
+</vector>
