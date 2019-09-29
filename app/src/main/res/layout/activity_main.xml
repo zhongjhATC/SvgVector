@@ -18,4 +18,10 @@
         android:layout_height="wrap_content"
         android:text="第二个例子" />
 
+    <Button
+        android:id="@+id/btnActivity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三个例子" />
+
 </LinearLayout>
