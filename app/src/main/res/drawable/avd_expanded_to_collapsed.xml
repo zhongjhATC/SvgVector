@@ -14,7 +14,7 @@
     </aapt:attr>
   </target>
 
-  <target android:name="leftBar">
+  <target android:name="rightBar">
     <aapt:attr name="android:animation">
       <objectAnimator
           android:duration="200"
@@ -26,7 +26,7 @@
     </aapt:attr>
   </target>
 
-  <target android:name="rightBar">
+  <target android:name="leftBar">
     <aapt:attr name="android:animation">
       <objectAnimator
           android:duration="200"

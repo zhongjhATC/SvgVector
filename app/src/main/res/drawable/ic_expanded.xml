@@ -5,21 +5,14 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
 
+    <!-- 整个画布移动到X12即是X中心点，而Y移动到9偏上 -->
     <group
         android:name="chevron"
         android:translateX="12"
         android:translateY="9">
+        <!-- 左边的矩形，向右正旋转45度，而Y移动+3=12，即是中心 -->
         <group
             android:name="leftBar"
-            android:rotation="135">
-            <group android:translateY="-3">
-                <path
-                    android:fillColor="@android:color/white"
-                    android:pathData="M 1,-4 L 1,4 L -1,4 L -1,-4 Z" />
-            </group>
-        </group>
-        <group
-            android:name="rightBar"
             android:rotation="45">
             <group android:translateY="3">
                 <path
@@ -27,5 +20,16 @@
                     android:pathData="M 1,-4 L 1,4 L -1,4 L -1,-4 Z" />
             </group>
         </group>
+        <!-- 右边的矩形，向右正旋转135度，这个135度会导致矩形往Y轴下面延伸，所以后面一个group需要Y移动-3=6 -->
+        <group
+            android:name="rightBar"
+            android:rotation="135">
+            <group android:translateY="-3">
+                <path
+                    android:fillColor="@android:color/white"
+                    android:pathData="M 1,-4 L 1,4 L -1,4 L -1,-4 Z" />
+            </group>
+        </group>
     </group>
+
 </vector>
