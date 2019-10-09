@@ -10,7 +10,7 @@
         android:name="chevron"
         android:translateX="12"
         android:translateY="15">
-        <!-- 左边的矩形，向右正旋转135度后会比较偏上，而旋转后，Y轴方向偏向左上角，所以Y移动+3=18会往左上角继续偏移(即是往上)，这样就比较居中了 -->
+        <!-- 左边的矩形，向右正旋转135度后会比较偏上，而旋转后，《Y轴方向偏向左上角》，所以Y移动+3=18会往左上角继续偏移(即是往上)，这样就比较居中了 -->
         <group
             android:name="leftBar"
             android:rotation="135">
@@ -20,7 +20,7 @@
                     android:pathData="M 1,-4 L 1,4 L -1,4 L -1,-4 Z" />
             </group>
         </group>
-        <!--  -->
+        <!-- 右边的矩形，向右正旋转45度，Y移动-3 -->
         <group
             android:name="rightBar"
             android:rotation="45">

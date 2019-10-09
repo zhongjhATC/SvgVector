@@ -1,3 +1,4 @@
+<!-- 动画差值器之 PathInterpolator,Material Design 中的动画利用曲线实现时间内插与空间移动模式,这个插值器在0*1的正方形上定义了曲线运动，以（0，0）和（0，1）点作为锚点 -->
 <pathInterpolator xmlns:android="http://schemas.android.com/apk/res/android"
     android:controlX1="0"
     android:controlX2="0"
