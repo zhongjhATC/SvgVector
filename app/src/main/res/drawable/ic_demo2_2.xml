@@ -1,16 +1,21 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="48dp"
     android:height="48dp"
-    android:viewportHeight="12"
-    android:viewportWidth="12">
+    android:viewportWidth="12"
+    android:viewportHeight="12">
 
     <!-- 1.以pivotX和pivotY都是坐标为6点作为中心，而scaleX也即是横向放大1.5倍 -->
-    <group android:scaleX="1.5" android:pivotX="6" android:pivotY="6">
+    <group
+        android:pivotX="6"
+        android:pivotY="6"
+        android:scaleX="1.5">
         <!-- 2.以pivotX和pivotY都是坐标为6点作为中心，rotation旋转90度 -->
         <group
-            android:rotation="90" android:pivotX="6" android:pivotY="6"
+            android:pivotX="6"
+            android:pivotY="6"
+            android:rotation="90"
             android:translateX="2">
-            <path android:name="pause_path"/>
+            <path android:name="pause_path" />
         </group>
     </group>
 
