@@ -4,6 +4,10 @@
     android:tint="?attr/colorControlNormal"
     android:viewportWidth="24"
     android:viewportHeight="24">
+
+    <!-- 顶部需要动画的两个矩形，可以看到button和button_pivot两个group分别translate加12,又translate减12,这样做目的是为了让后面的动画可以让这两个矩形围绕这12中心点抖动。
+            至于具体原理我还查不到相关资料，如果有人知道麻烦留言，非常感谢！
+            我猜测+12是扩大画布，-12又回到原位置，这样可以定点中心点在12利用抖动。-->
     <group
         android:name="button"
         android:translateX="12"
@@ -12,6 +16,7 @@
             android:name="button_pivot"
             android:translateX="-12"
             android:translateY="-12">
+            <!-- 左边的矩形 -->
             <group
                 android:name="right_button">
                 <path
@@ -20,6 +25,7 @@
                     android:fillColor="@android:color/white"
                     android:pathData="M 22 5.72 L 17.4 1.86 L 16.11 3.39 L 20.71 7.25 L 22 5.72 Z" />
             </group>
+            <!-- 右边的矩形 -->
             <group
                 android:name="left_button">
                 <path
@@ -31,6 +37,7 @@
         </group>
     </group>
 
+    <!-- 圆形和表针的组成 -->
     <group
         android:name="alarm"
         android:translateX="12"
@@ -39,6 +46,7 @@
             android:name="alarm_pivot"
             android:translateX="-12"
             android:translateY="-12">
+            <!-- 表针 -->
             <group
                 android:name="alarm_hands">
                 <path
@@ -47,6 +55,7 @@
                     android:fillColor="@android:color/white"
                     android:pathData="M 12.5 8 L 11 8 L 11 14 L 15.75 16.85 L 16.5 15.62 L 12.5 13.25 L 12.5 8 Z" />
             </group>
+            <!-- 圆形 -->
             <group
                 android:name="alarm_body">
                 <path

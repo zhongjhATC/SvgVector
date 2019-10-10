@@ -2,6 +2,7 @@
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/vd_clock_alarm">
 
+    <!-- 只针对button进行抖动的动画，从0-8一直来回抖动，最终回到0 -->
     <target android:name="button">
         <aapt:attr name="android:animation">
             <set android:ordering="sequentially">
