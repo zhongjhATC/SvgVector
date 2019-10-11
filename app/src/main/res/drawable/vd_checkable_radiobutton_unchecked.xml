@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:tint="?attr/colorControlNormal"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:translateX="12"
+        android:translateY="12">
+        <!-- 外圈 -->
+        <group android:name="ring_outer">
+            <path
+                android:name="ring_outer_path"
+                android:pathData="M 0,0 m -9,0 a 9,9 0 1,0 18,0 a 9,9 0 1,0 -18,0"
+                android:strokeWidth="2"
+                android:strokeColor="@android:color/white" />
+        </group>
+        <!-- 内点 -->
+        <group
+            android:name="dot_group"
+            android:scaleX="0"
+            android:scaleY="0">
+            <path
+                android:name="dot_path"
+                android:fillColor="@android:color/white"
+                android:pathData="M 12 7 C 9.24 7 7 9.24 7 12 C 7 14.76 9.24 17 12 17 C 14.76 17 17 14.76 17 12 C 17 9.24 14.76 7 12 7 Z" />
+        </group>
+    </group>
+</vector>
