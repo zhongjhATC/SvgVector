@@ -1,29 +1,31 @@
+<!-- 未选图片 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"
     android:tint="?attr/colorControlNormal"
     android:viewportWidth="24"
     android:viewportHeight="24">
+    <!-- 外圈,pivotX和pivotY都设置12中心点，这样围绕着中心点放大或者缩小 -->
     <group
-        android:translateX="12"
-        android:translateY="12">
-        <!-- 外圈 -->
-        <group android:name="ring_outer">
-            <path
-                android:name="ring_outer_path"
-                android:pathData="M 0,0 m -9,0 a 9,9 0 1,0 18,0 a 9,9 0 1,0 -18,0"
-                android:strokeWidth="2"
-                android:strokeColor="@android:color/white" />
-        </group>
-        <!-- 内点 -->
-        <group
-            android:name="dot_group"
-            android:scaleX="0"
-            android:scaleY="0">
-            <path
-                android:name="dot_path"
-                android:fillColor="@android:color/white"
-                android:pathData="M 12 7 C 9.24 7 7 9.24 7 12 C 7 14.76 9.24 17 12 17 C 14.76 17 17 14.76 17 12 C 17 9.24 14.76 7 12 7 Z" />
-        </group>
+        android:name="ring_outer"
+        android:pivotX="12"
+        android:pivotY="12">
+        <path
+            android:name="ring_outer_path"
+            android:pathData="M 12 2 C 6.48 2 2 6.48 2 12 C 2 17.52 6.48 22 12 22 C 17.52 22 22 17.52 22 12 C 22 6.48 17.52 2 12 2 Z"
+            android:strokeWidth="2"
+            android:strokeColor="@android:color/white" />
+    </group>
+    <!-- 内圈,pivotX和pivotY都设置12中心点，这样围绕着中心点放大或者缩小。scaleX和scaleY都设置0去掉内圈 -->
+    <group
+        android:name="dot_group"
+        android:pivotX="12"
+        android:pivotY="12"
+        android:scaleX="0"
+        android:scaleY="0">
+        <path
+            android:name="dot_path"
+            android:fillColor="@android:color/white"
+            android:pathData="M 12 7 C 9.24 7 7 9.24 7 12 C 7 14.76 9.24 17 12 17 C 14.76 17 17 14.76 17 12 C 17 9.24 14.76 7 12 7 Z" />
     </group>
 </vector>
