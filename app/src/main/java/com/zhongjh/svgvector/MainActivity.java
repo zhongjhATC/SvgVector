@@ -52,5 +52,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 第六个例子
+        findViewById(R.id.btnActivity6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Demo6Activity.class));
+            }
+        });
+
     }
 }
