@@ -1,6 +1,8 @@
+<!-- 显示过渡到消失的动画 -->
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/vd_fingerprint_off">
+    <!-- 第五条线：trimPathStart，从起始点到结束点顺序性的截取全部消失 -->
     <target android:name="ridge_5_path">
         <aapt:attr name="android:animation">
             <set android:ordering="sequentially">
@@ -13,7 +15,7 @@
                     android:valueType="floatType" />
                 <objectAnimator
                     android:duration="180"
-                    android:interpolator="@interpolator/fingerprint_off_1"
+                    android:interpolator="@anim/fingerprint_off_1"
                     android:propertyName="trimPathStart"
                     android:valueFrom="0.0"
                     android:valueTo="1.0"
@@ -21,6 +23,7 @@
             </set>
         </aapt:attr>
     </target>
+    <!-- 第四条线：trimPathStart，从起始点到结束点顺序性的截取全部消失 -->
     <target android:name="ridge_7_path">
         <aapt:attr name="android:animation">
             <set android:ordering="sequentially">
@@ -33,7 +36,7 @@
                     android:valueType="floatType" />
                 <objectAnimator
                     android:duration="160"
-                    android:interpolator="@interpolator/fingerprint_off_1"
+                    android:interpolator="@anim/fingerprint_off_1"
                     android:propertyName="trimPathStart"
                     android:valueFrom="0"
                     android:valueTo="1"
@@ -41,28 +44,31 @@
             </set>
         </aapt:attr>
     </target>
+    <!-- 第三条线：trimPathEnd，从结束点到起始点倒序的截取全部消失 -->
     <target android:name="ridge_6_path">
         <aapt:attr name="android:animation">
             <objectAnimator
                 android:duration="190"
-                android:interpolator="@interpolator/fingerprint_off_1"
+                android:interpolator="@anim/fingerprint_off_1"
                 android:propertyName="trimPathEnd"
                 android:valueFrom="1"
                 android:valueTo="0"
                 android:valueType="floatType" />
         </aapt:attr>
     </target>
+    <!-- 第二条线：trimPathEnd，从结束点到起始点倒序的截取全部消失 -->
     <target android:name="ridge_2_path">
         <aapt:attr name="android:animation">
             <objectAnimator
                 android:duration="140"
-                android:interpolator="@interpolator/fingerprint_off_0"
+                android:interpolator="@anim/fingerprint_off_0"
                 android:propertyName="trimPathEnd"
                 android:valueFrom="1"
                 android:valueTo="0"
                 android:valueType="floatType" />
         </aapt:attr>
     </target>
+    <!-- 第一条线：trimPathStart，从起始点到结束点顺序性的截取全部消失 -->
     <target android:name="ridge_1_path">
         <aapt:attr name="android:animation">
             <set android:ordering="sequentially">
@@ -75,7 +81,7 @@
                     android:valueType="floatType" />
                 <objectAnimator
                     android:duration="216"
-                    android:interpolator="@interpolator/fingerprint_off_1"
+                    android:interpolator="@anim/fingerprint_off_1"
                     android:propertyName="trimPathStart"
                     android:valueFrom="0"
                     android:valueTo="1"
