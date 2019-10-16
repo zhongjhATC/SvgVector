@@ -1,0 +1,109 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/vd_trimclip_searchback_search">
+
+    <!-- 柄的过渡动画 -->
+    <target android:name="stem">
+        <aapt:attr name="android:animation">
+            <!-- 顺序执行 -->
+            <set android:ordering="together">
+                <!-- 线条从起点缩短到终点，即初始截断部分是0%，从起点开始逐渐扩大到终点，截取75%。留下箭头柄 -->
+                <objectAnimator
+                    android:duration="600"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="0"
+                    android:valueTo="0.75" />
+                <!-- 线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，直到剩下10.85%。 -->
+                <objectAnimator
+                    android:duration="450"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0.185"
+                    android:valueTo="1" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <!-- 圆型的过渡动画 -->
+    <target android:name="search_circle">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="250"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:valueFrom="1"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="arrow_head_top">
+        <aapt:attr name="android:animation">
+            <set>
+                <!-- First we need to immediately reset state. -->
+                <objectAnimator
+                    android:duration="0"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="0" />
+
+                <!-- Then run the animation after a delay. -->
+                <objectAnimator
+                    android:duration="250"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="trimPathEnd"
+                    android:startOffset="350"
+                    android:valueFrom="0"
+                    android:valueTo="1" />
+            </set>
+        </aapt:attr>
+
+    </target>
+
+    <target android:name="arrow_head_bottom">
+
+        <aapt:attr name="android:animation">
+            <set>
+                <!-- First we need to immediately reset state. -->
+                <objectAnimator
+                    android:duration="0"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="0" />
+
+                <!-- Then run the animation after a delay. -->
+                <objectAnimator
+                    android:duration="250"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="trimPathEnd"
+                    android:startOffset="350"
+                    android:valueFrom="0"
+                    android:valueTo="1" />
+            </set>
+        </aapt:attr>
+
+    </target>
+
+    <target android:name="arrow_head">
+        <aapt:attr name="android:animation">
+            <set>
+                <!-- First we need to immediately reset state. -->
+                <objectAnimator
+                    android:duration="0"
+                    android:propertyName="translateX"
+                    android:valueFrom="8"
+                    android:valueTo="8" />
+
+                <!-- Then run the animation after a delay. -->
+                <objectAnimator
+                    android:duration="250"
+                    android:interpolator="@android:interpolator/linear_out_slow_in"
+                    android:propertyName="translateX"
+                    android:startOffset="350"
+                    android:valueFrom="8"
+                    android:valueTo="0" />
+            </set>
+        </aapt:attr>
+    </target>
+
+</animated-vector>
