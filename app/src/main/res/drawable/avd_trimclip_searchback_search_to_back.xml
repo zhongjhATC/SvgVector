@@ -7,14 +7,15 @@
         <aapt:attr name="android:animation">
             <!-- 顺序执行 -->
             <set android:ordering="together">
-                <!-- 线条从起点缩短到终点，即初始截断部分是0%，从起点开始逐渐扩大到终点，截取75%。留下箭头柄 -->
+                <!-- 线条从起点缩短到终点，即初始截断部分是0%，从起点开始逐渐扩大到终点，截取75%。留下25%的箭头柄 -->
                 <objectAnimator
                     android:duration="600"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
                     android:propertyName="trimPathStart"
                     android:valueFrom="0"
                     android:valueTo="0.75" />
-                <!-- 线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，直到剩下10.85%。 -->
+                <!-- 不知道为什么上面的动画执行后还会留下 10.85%的圆形柄头，所以这个是截取掉圆形柄头 -->
+                <!-- 线条从起点增长到终点，即初始截断部分是10.85%(即是从圆形的柄头尾巴开始)，从起点开始逐渐缩小到终点，直到达到0%。 -->
                 <objectAnimator
                     android:duration="450"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
