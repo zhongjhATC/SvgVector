@@ -27,6 +27,7 @@ public class Demo8Activity extends AppCompatActivity {
                 searchbackView.setImageState(stateSet, true);
             }
         });
-
     }
+
+
 }
