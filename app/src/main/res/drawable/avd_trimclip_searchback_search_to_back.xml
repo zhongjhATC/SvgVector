@@ -39,17 +39,18 @@
         </aapt:attr>
     </target>
 
+    <!-- 上部分箭头 -->
     <target android:name="arrow_head_top">
         <aapt:attr name="android:animation">
             <set>
-                <!-- First we need to immediately reset state. -->
+                <!-- 首先我们需要立即重置状态，直接隐藏：线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到100% -->
                 <objectAnimator
                     android:duration="0"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
                     android:valueTo="0" />
 
-                <!-- Then run the animation after a delay. -->
+                <!-- 然后在延迟之后运行动画：线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0%。 -->
                 <objectAnimator
                     android:duration="250"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
@@ -62,18 +63,19 @@
 
     </target>
 
+    <!-- 下箭头部分 -->
     <target android:name="arrow_head_bottom">
 
         <aapt:attr name="android:animation">
             <set>
-                <!-- First we need to immediately reset state. -->
+                <!-- 首先我们需要立即重置状态，直接隐藏：线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到100% -->
                 <objectAnimator
                     android:duration="0"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
                     android:valueTo="0" />
 
-                <!-- Then run the animation after a delay. -->
+                <!-- 然后在延迟之后运行动画：线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0%。 -->
                 <objectAnimator
                     android:duration="250"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
@@ -86,17 +88,18 @@
 
     </target>
 
+    <!-- 整个箭头部分，就算注释这个，呈现的效果依然不变 -->
     <target android:name="arrow_head">
         <aapt:attr name="android:animation">
             <set>
-                <!-- First we need to immediately reset state. -->
+                <!-- 首先我们需要立即重置状态。 -->
                 <objectAnimator
                     android:duration="0"
                     android:propertyName="translateX"
                     android:valueFrom="8"
                     android:valueTo="8" />
 
-                <!-- Then run the animation after a delay. -->
+                <!-- 然后在延迟之后运行动画。 -->
                 <objectAnimator
                     android:duration="250"
                     android:interpolator="@android:interpolator/linear_out_slow_in"
