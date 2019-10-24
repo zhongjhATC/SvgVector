@@ -9,11 +9,11 @@
             <set android:ordering="together">
                 <!-- 线条从起点缩短到终点，即初始截断部分是0%，从起点开始逐渐扩大到终点，截取75%。留下25%的箭头柄 -->
                 <objectAnimator
-                android:duration="600"
-                android:interpolator="@android:interpolator/fast_out_slow_in"
-                android:propertyName="trimPathStart"
-                android:valueFrom="0"
-                android:valueTo="0.75" />
+                    android:duration="600"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="0"
+                    android:valueTo="0.75" />
 
                 <!--上面的trimPathStart动画执行后还会留下 本身图片的10.85%的圆形柄头，所以这个是截取掉圆形柄头 -->
                 <!--线条从起点增长到终点，即初始截断部分是10.85%(即是从圆形的柄头尾巴开始)，从起点开始逐渐缩小到终点，直到达到0%。-->
@@ -88,7 +88,10 @@
 
     </target>
 
-    <!-- 整个箭头部分，就算注释这个，呈现的效果依然不变 -->
+    <!-- 整个箭头部分，以下文字配合https://www.androiddesignpatterns.com/2016/11/introduction-to-icon-animation-techniques.html的慢动作食用效果更佳 -->
+    <!-- 可将第一个objectAnimator的valueFrom和valueTo都改成0，第二个objectAnimator注释。 -->
+    <!-- 会发现这个0是以arrow_head的0为基准，而不是整个画布的0为基准，同样，8即是x轴偏移8点 -->
+    <!-- 所以整体动画就是初始将整个箭头以先arrow_head的0为基准，瞬间移动到x粥偏移8点，然后350毫秒从8移到箭头原处，上面两个显示箭头的动画同时也是350毫秒完成-->
     <target android:name="arrow_head">
         <aapt:attr name="android:animation">
             <set>
