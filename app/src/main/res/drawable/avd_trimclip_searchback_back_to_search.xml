@@ -1,3 +1,4 @@
+<!-- 返回过渡到搜索 -->
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/vd_trimclip_searchback_back">
