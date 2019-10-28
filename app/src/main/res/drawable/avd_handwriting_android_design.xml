@@ -1,0 +1,110 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/vd_handwriting_android_design">
+
+    <!-- 这是将每个节点都一一显示，每一个都是在前面的显示后，再额外50毫秒显示本身 -->
+
+    <!-- Andro的字母，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="andro">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="1000"
+                android:interpolator="@android:interpolator/fast_out_linear_in"
+                android:propertyName="trimPathEnd"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+    <!-- id的字母，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="id">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="250"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="1050"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+    <!-- A字母的横杠，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="a_stroke">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="50"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="1300"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+    <!-- i字母的一点，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="i_dot">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="50"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="1400"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+    <!-- d字母，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="d">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="200"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="1550"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+    <!-- esig字母，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="esig">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="600"
+                android:interpolator="@android:interpolator/fast_out_linear_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="1800"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+    <!-- n字母，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="n">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="200"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="2450"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+    <!-- design里面的i的点，线条从起点增长到终点，即初始截断部分是100%，从起点开始逐渐缩小到终点，达到0% -->
+    <target android:name="second_i_dot">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="50"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="2700"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+</animated-vector>

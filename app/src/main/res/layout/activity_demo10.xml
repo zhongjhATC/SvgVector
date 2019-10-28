@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Demo10Activity">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/io16Icon"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@null"
+        android:maxWidth="240dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/avd_handwriting_io16"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
