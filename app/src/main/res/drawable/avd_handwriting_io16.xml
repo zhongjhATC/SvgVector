@@ -1,3 +1,4 @@
+<!-- 分别给予1和6的所有划分的路径动画 -->
 <animated-vector
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:drawable="@drawable/vd_handwriting_io16">
