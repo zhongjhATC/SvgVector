@@ -13,6 +13,8 @@ public class Demo11Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo11);
         startProgressBar(R.id.circular_indeterminate_progress_medium);
+        startProgressBar(R.id.circular_indeterminate_progress_medium2);
+        startProgressBar(R.id.circular_indeterminate_progress_medium3);
     }
 
     private void startProgressBar(@IdRes int progressBarId) {

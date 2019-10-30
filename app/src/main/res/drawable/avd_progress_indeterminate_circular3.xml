@@ -44,18 +44,18 @@
                 <!--因为原图保留0.03的原因，所以会额外留下一点点 -->
                 <!--android:duration="1333"，会从一点变成25%的小弧的过渡时间，默认值是300m -->
                 <!-- 总结：这是一个先显示圆弧，再缩小到只有25%的小圆弧 -->
-                <objectAnimator
-                    android:duration="1333"
-                    android:propertyName="trimPathStart"
-                    android:repeatCount="-1"
-                    android:valueFrom="0"
-                    android:valueTo="0.75"
-                    android:valueType="floatType">
-                    <!-- 差值器，相关文章会独自介绍它，这个差值器会导致它看起来优先执行 -->
-                    <aapt:attr name="android:interpolator">
-                        <pathInterpolator android:pathData="L0.5,0 C 0.7,0 0.6,1 1,1" />
-                    </aapt:attr>
-                </objectAnimator>
+                <!--<objectAnimator-->
+                    <!--android:duration="1333"-->
+                    <!--android:propertyName="trimPathStart"-->
+                    <!--android:repeatCount="-1"-->
+                    <!--android:valueFrom="0"-->
+                    <!--android:valueTo="0.75"-->
+                    <!--android:valueType="floatType">-->
+                    <!--&lt;!&ndash; 差值器，相关文章会独自介绍它 &ndash;&gt;-->
+                    <!--<aapt:attr name="android:interpolator">-->
+                        <!--<pathInterpolator android:pathData="L0.5,0 C 0.7,0 0.6,1 1,1" />-->
+                    <!--</aapt:attr>-->
+                <!--</objectAnimator>-->
                 <!-- android:propertyName="trimPathEnd" 即初始截断部分是97%，从起点开始逐渐缩小到终点，达到截断部分22%。 -->
                 <objectAnimator
                     android:duration="1333"
@@ -64,7 +64,7 @@
                     android:valueFrom="0.03"
                     android:valueTo="0.78"
                     android:valueType="floatType">
-                    <!-- 差值器，相关文章会独自介绍它，这个差值器会导致它看起来居于上个动画执行 -->
+                    <!-- 差值器，相关文章会独自介绍它 -->
                     <aapt:attr name="android:interpolator">
                         <pathInterpolator android:pathData="C0.2,0 0.1,1 0.5,0.96 C 0.96666666666,0.96 0.99333333333,1 1,1" />
                     </aapt:attr>
