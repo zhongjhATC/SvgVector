@@ -8,19 +8,10 @@
             android:tint="?attr/colorControlActivated"
             android:viewportHeight="48"
             android:viewportWidth="48">
-            <!-- 圆形的容器 -->
             <group
                 android:name="progressBarContainer"
                 android:translateX="24"
                 android:translateY="24">
-                <!--
-                这是个圆形路径：
-                android:fillColor="@android:color/transparent":填充透明
-                android:strokeColor="@android:color/white":线条白色
-                android:strokeLineCap="square":指定曲线的首尾外观，square即是方形边缘
-                android:strokeLineJoin="miter":指定两条曲线相交的边角外观。miter即是默认值，锐角
-                android:trimPathStart和android:trimPathEnd 初始只显示整个圆形的0.03
-                 -->
                 <path
                     android:name="progressBar"
                     android:fillColor="@android:color/transparent"
@@ -54,45 +45,12 @@
                     <!-- 差值器，相关文章会独自介绍它 -->
                     <aapt:attr name="android:interpolator">
                         <pathInterpolator android:pathData="L0.5,0 C 0.7,0 0.6,1 1,1" />
+                        <!-- 可以尝试用L1,1看看具体效果 -->
+                        <!--<pathInterpolator android:pathData="L1,1" />-->
                     </aapt:attr>
                 </objectAnimator>
-                <!-- android:propertyName="trimPathEnd" 即初始截断部分是97%，从起点开始逐渐缩小到终点，达到截断部分22%。 -->
-                <!--<objectAnimator-->
-                    <!--android:duration="1333"-->
-                    <!--android:propertyName="trimPathEnd"-->
-                    <!--android:repeatCount="-1"-->
-                    <!--android:valueFrom="0.03"-->
-                    <!--android:valueTo="0.78"-->
-                    <!--android:valueType="floatType">-->
-                    <!--&lt;!&ndash; 差值器，相关文章会独自介绍它 &ndash;&gt;-->
-                    <!--<aapt:attr name="android:interpolator">-->
-                        <!--<pathInterpolator android:pathData="C0.2,0 0.1,1 0.5,0.96 C 0.96666666666,0.96 0.99333333333,1 1,1" />-->
-                    <!--</aapt:attr>-->
-                <!--</objectAnimator>-->
-                <!--<objectAnimator-->
-                    <!--android:duration="1333"-->
-                    <!--android:interpolator="@android:anim/linear_interpolator"-->
-                    <!--android:propertyName="trimPathOffset"-->
-                    <!--android:repeatCount="-1"-->
-                    <!--android:valueFrom="0"-->
-                    <!--android:valueTo="0.25"-->
-                    <!--android:valueType="floatType" />-->
             </set>
         </aapt:attr>
     </target>
-
-    <!--&lt;!&ndash; 容器的动画，它只负责无限的旋转720度 &ndash;&gt;-->
-    <!--<target android:name="progressBarContainer">-->
-    <!--<aapt:attr name="android:animation">-->
-    <!--<objectAnimator-->
-    <!--android:duration="4444"-->
-    <!--android:interpolator="@android:anim/linear_interpolator"-->
-    <!--android:propertyName="rotation"-->
-    <!--android:repeatCount="-1"-->
-    <!--android:valueFrom="0"-->
-    <!--android:valueTo="720"-->
-    <!--android:valueType="floatType"/>-->
-    <!--</aapt:attr>-->
-    <!--</target>-->
 
 </animated-vector>

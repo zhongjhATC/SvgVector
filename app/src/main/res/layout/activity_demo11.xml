@@ -19,6 +19,10 @@
         app:srcCompat="@drawable/avd_progress_indeterminate_circular"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:text="下面主要是展示插值器影响的"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/circular_indeterminate_progress_medium2"

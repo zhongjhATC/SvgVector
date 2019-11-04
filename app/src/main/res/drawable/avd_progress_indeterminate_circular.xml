@@ -1,6 +1,7 @@
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt">
 
+    <!-- 一个圆形的图片 -->
     <aapt:attr name="android:drawable">
         <vector
             android:width="48dp"
@@ -36,6 +37,7 @@
         </vector>
     </aapt:attr>
 
+    <!-- 圆形的动画 -->
     <target android:name="progressBar">
         <aapt:attr name="android:animation">
             <set>
@@ -51,7 +53,7 @@
                     android:valueFrom="0"
                     android:valueTo="0.75"
                     android:valueType="floatType">
-                    <!-- 差值器，相关文章会独自介绍它，这个差值器会导致它看起来优先执行 -->
+                    <!-- 差值器，相关文章会独自介绍它，这个差值器会导致它看起来居于下个动画执行 -->
                     <aapt:attr name="android:interpolator">
                         <pathInterpolator android:pathData="L0.5,0 C 0.7,0 0.6,1 1,1" />
                     </aapt:attr>
@@ -64,35 +66,36 @@
                     android:valueFrom="0.03"
                     android:valueTo="0.78"
                     android:valueType="floatType">
-                    <!-- 差值器，相关文章会独自介绍它，这个差值器会导致它看起来居于上个动画执行 -->
+                    <!-- 差值器，相关文章会独自介绍它，这个差值器会导致它看起来优先执行 -->
                     <aapt:attr name="android:interpolator">
                         <pathInterpolator android:pathData="C0.2,0 0.1,1 0.5,0.96 C 0.96666666666,0.96 0.99333333333,1 1,1" />
                     </aapt:attr>
                 </objectAnimator>
-                <!--<objectAnimator-->
-                    <!--android:duration="1333"-->
-                    <!--android:interpolator="@android:anim/linear_interpolator"-->
-                    <!--android:propertyName="trimPathOffset"-->
-                    <!--android:repeatCount="-1"-->
-                    <!--android:valueFrom="0"-->
-                    <!--android:valueTo="0.25"-->
-                    <!--android:valueType="floatType" />-->
+                <!-- android:propertyName="trimPathOffset" 一个偏移动画，移动0.25让动画显的更自然一点 -->
+                <objectAnimator
+                    android:duration="1333"
+                    android:interpolator="@android:anim/linear_interpolator"
+                    android:propertyName="trimPathOffset"
+                    android:repeatCount="-1"
+                    android:valueFrom="0"
+                    android:valueTo="0.25"
+                    android:valueType="floatType" />
             </set>
         </aapt:attr>
     </target>
 
-    <!--&lt;!&ndash; 容器的动画，它只负责无限的旋转720度 &ndash;&gt;-->
-    <!--<target android:name="progressBarContainer">-->
-    <!--<aapt:attr name="android:animation">-->
-    <!--<objectAnimator-->
-    <!--android:duration="4444"-->
-    <!--android:interpolator="@android:anim/linear_interpolator"-->
-    <!--android:propertyName="rotation"-->
-    <!--android:repeatCount="-1"-->
-    <!--android:valueFrom="0"-->
-    <!--android:valueTo="720"-->
-    <!--android:valueType="floatType"/>-->
-    <!--</aapt:attr>-->
-    <!--</target>-->
+    <!-- 容器的动画，它只负责无限的旋转720度 -->
+    <target android:name="progressBarContainer">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="4444"
+                android:interpolator="@android:anim/linear_interpolator"
+                android:propertyName="rotation"
+                android:repeatCount="-1"
+                android:valueFrom="0"
+                android:valueTo="720"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
 
 </animated-vector>
