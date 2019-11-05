@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+  <!-- 减号 -->
   <item
     android:id="@+id/minus"
     android:drawable="@drawable/vd_pathmorph_plusminus_minus"
     android:state_checked="true"/>
 
+  <!-- 加号 -->
   <item
     android:id="@+id/plus"
     android:drawable="@drawable/vd_pathmorph_plusminus_plus"/>
 
+  <!-- 减号到加号的动画 -->
   <transition
     android:drawable="@drawable/avd_pathmorph_plusminus_minus_to_plus"
     android:fromId="@id/minus"
     android:toId="@id/plus"/>
 
+  <!-- 加号到减号的动画 -->
   <transition
     android:drawable="@drawable/avd_pathmorph_plusminus_plus_to_minus"
     android:fromId="@id/plus"

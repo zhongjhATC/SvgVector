@@ -72,4 +72,10 @@
         android:layout_height="wrap_content"
         android:text="第十一个例子" />
 
+    <Button
+        android:id="@+id/btnActivity12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第十二个例子" />
+
 </LinearLayout>
