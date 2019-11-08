@@ -1,0 +1,8 @@
+<resources>
+
+  <string name="path_tick">M 4.8 12 L 3.4 13.4 L 9 19 L 10.365 17.561 Z M 7.57 17.575 L 9 19 L 21 7 L 19.6 5.6 L 7.57 17.575 Z</string>
+  <string name="path_cross">M 6.41 5 L 5 6.41 L 17.59 19 L 19 17.59 Z M 5 17.59 L 6.41 19 L 19 6.41 L 17.59 5 L 5 17.59 Z</string>
+  <integer name="stroke_width">1</integer>
+  <integer name="crosstick_duration">300</integer>
+
+</resources>

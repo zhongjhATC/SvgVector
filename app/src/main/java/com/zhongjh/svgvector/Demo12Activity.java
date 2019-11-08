@@ -12,7 +12,8 @@ public class Demo12Activity extends AppCompatActivity {
 
     @BindView(R.id.drawer)
     ImageView drawerView;
-    //    @BindView(R.id.crosstick) ImageView crossTickView;
+    @BindView(R.id.crosstick)
+    ImageView crossTickView;
     @BindView(R.id.plusminus)
     ImageView plusMinusView;
     //    @BindView(R.id.arrowoverflow) ImageView arrowoverflowView;
@@ -30,7 +31,7 @@ public class Demo12Activity extends AppCompatActivity {
         isChecked = !isChecked;
         final int[] stateSet = {android.R.attr.state_checked * (isChecked ? 1 : -1)};
         drawerView.setImageState(stateSet, true);
-//        crossTickView.setImageState(stateSet, true);
+        crossTickView.setImageState(stateSet, true);
         plusMinusView.setImageState(stateSet, true);
 //        arrowoverflowView.setImageState(stateSet, true);
     }

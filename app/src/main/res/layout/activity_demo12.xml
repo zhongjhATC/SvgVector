@@ -20,17 +20,17 @@
             android:padding="8dp"
             android:scaleType="fitCenter" />
 
-        <!--<ImageView-->
-            <!--android:id="@+id/crosstick"-->
-            <!--android:layout_width="128dp"-->
-            <!--android:layout_height="128dp"-->
-            <!--android:layout_alignTop="@id/drawer"-->
-            <!--android:layout_toEndOf="@id/drawer"-->
-            <!--android:layout_toRightOf="@id/drawer"-->
-            <!--android:contentDescription="@null"-->
-            <!--android:padding="8dp"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--app:srcCompat="@drawable/asl_pathmorph_crosstick" />-->
+        <ImageView
+            android:id="@+id/crosstick"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_alignTop="@id/drawer"
+            android:layout_toEndOf="@id/drawer"
+            android:layout_toRightOf="@id/drawer"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/asl_pathmorph_crosstick" />
 
         <ImageView
             android:id="@+id/plusminus"
