@@ -1,0 +1,64 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:tint="?attr/colorControlNormal"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:name="hourglass_frame"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:translateX="12"
+        android:translateY="12">
+        <group
+            android:name="hourglass_frame_pivot"
+            android:translateX="-12"
+            android:translateY="-12">
+            <!-- 上半部分空图,移动位置为了中心是以此group为准 -->
+            <group
+                android:name="hourglass_bottom"
+                android:translateX="12"
+                android:translateY="7.5">
+                <path
+                    android:name="bottom_inner_path"
+                    android:fillAlpha="1"
+                    android:fillColor="@android:color/white"
+                    android:pathData="M -6 -5 L -6 1 L -5.99 1 L -6 1.01 L -2 5 L 2 5 L 6 1.01 L 5.99 1 L 6 1 L 6 -5 L -6 -5 Z M 0 4.5 L -4 0.5 L -4 -3 L 4 -3 L 4 0.5 L 0 4.5 Z" />
+            </group>
+            <!-- 下半部分空图,移动位置为了中心是以此group为准 -->
+            <group
+                android:name="hourglass_top"
+                android:translateX="12"
+                android:translateY="17.5">
+                <path
+                    android:name="top_inner_path"
+                    android:fillAlpha="1"
+                    android:fillColor="@android:color/white"
+                    android:pathData="M -2 -5 L -6 -1 L -5.99 -0.99 L -6 -0.99 L -6 5 L 6 5 L 6 -0.99 L 5.99 -0.99 L 6 -1 L 2 -5 L -2 -5 Z M 4 -0.5 L 4 3 L -4 3 L -4 -0.5 L 0 -4.5 L 4 -0.5 Z" />
+            </group>
+        </group>
+    </group>
+    <!-- 这是填充的 -->
+    <group
+        android:name="hourglass_fill"
+        android:scaleX="0.55"
+        android:scaleY="0.6"
+        android:translateX="12"
+        android:translateY="12">
+        <group
+            android:name="hourglass_fill_pivot"
+            android:translateX="-12"
+            android:translateY="-12">
+            <!-- 下半部分是黑的 -->
+            <clip-path
+                android:name="mask_1"
+                android:pathData="M 24,13.3999938965 c 0,0 -24,0 -24,0 c 0,0 0,10.6000061035 0,10.6000061035 c 0,0 24,0 24,0 c 0,0 0,-10.6000061035 0,-10.6000061035 Z" />
+            <!-- 这是填充的 -->
+            <path
+                android:name="fill_path"
+                android:fillAlpha="1"
+                android:fillColor="@android:color/white"
+                android:pathData="M 6 2 L 6 8 L 6.01 8 L 6 8.01 L 10 12 L 6 16 L 6.01 16.01 L 6 16.01 L 6 22 L 18 22 L 18 16.01 L 17.99 16.01 L 18 16 L 14 12 L 18 8.01 L 17.99 8 L 18 8 L 18 2 L 6 2 Z" />
+        </group>
+    </group>
+</vector>

@@ -82,6 +82,12 @@
             android:layout_height="wrap_content"
             android:text="第十二个例子" />
 
+        <Button
+            android:id="@+id/btnActivity13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第十三个例子" />
+
     </LinearLayout>
 
 </ScrollView>
