@@ -2,6 +2,7 @@
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/vd_clock_timer">
 
+    <!-- 整个沙漏图的180度旋转 -->
     <target android:name="hourglass_frame">
         <aapt:attr name="android:animation">
             <objectAnimator
@@ -13,6 +14,7 @@
         </aapt:attr>
     </target>
 
+    <!-- 下半部分填满的180度旋转 -->
     <target android:name="hourglass_fill">
         <aapt:attr name="android:animation">
             <objectAnimator
@@ -26,7 +28,9 @@
 
     <target android:name="mask_1">
         <aapt:attr name="android:animation">
+            <!-- :顺序执行 -->
             <set android:ordering="sequentially">
+                <!-- 下半部全黑 -->
                 <objectAnimator
                     android:duration="333"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
@@ -34,6 +38,7 @@
                     android:valueFrom="M 24 12 L 0 12 L 0 24 L 24 24 Z"
                     android:valueTo="M 24 12 L 0 12 L 0 24 L 24 24 Z"
                     android:valueType="pathType" />
+                <!-- 因为333毫秒旋转后，本身的下半部就变成上半部，上半部变成下半部，所以下半部全黑到上半部全黑，完成了这个黑色的过渡动画 -->
                 <objectAnimator
                     android:duration="1000"
                     android:interpolator="@android:interpolator/fast_out_slow_in"

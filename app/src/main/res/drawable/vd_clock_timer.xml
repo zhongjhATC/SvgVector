@@ -14,7 +14,7 @@
             android:name="hourglass_frame_pivot"
             android:translateX="-12"
             android:translateY="-12">
-            <!-- 上半部分空图,移动位置为了中心是以此group为准 -->
+            <!-- 沙漏上半部分空图,移动位置为了中心是以此group为准 -->
             <group
                 android:name="hourglass_bottom"
                 android:translateX="12"
@@ -25,7 +25,7 @@
                     android:fillColor="@android:color/white"
                     android:pathData="M -6 -5 L -6 1 L -5.99 1 L -6 1.01 L -2 5 L 2 5 L 6 1.01 L 5.99 1 L 6 1 L 6 -5 L -6 -5 Z M 0 4.5 L -4 0.5 L -4 -3 L 4 -3 L 4 0.5 L 0 4.5 Z" />
             </group>
-            <!-- 下半部分空图,移动位置为了中心是以此group为准 -->
+            <!-- 沙漏下半部分空图,移动位置为了中心是以此group为准 -->
             <group
                 android:name="hourglass_top"
                 android:translateX="12"
@@ -49,11 +49,11 @@
             android:name="hourglass_fill_pivot"
             android:translateX="-12"
             android:translateY="-12">
-            <!-- 下半部分是黑的 -->
+            <!-- 整图下半部分是黑的 -->
             <clip-path
                 android:name="mask_1"
                 android:pathData="M 24,13.3999938965 c 0,0 -24,0 -24,0 c 0,0 0,10.6000061035 0,10.6000061035 c 0,0 24,0 24,0 c 0,0 0,-10.6000061035 0,-10.6000061035 Z" />
-            <!-- 这是填充的 -->
+            <!-- 这是整个填充的沙漏图 -->
             <path
                 android:name="fill_path"
                 android:fillAlpha="1"
