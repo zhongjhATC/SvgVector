@@ -16,7 +16,8 @@ public class Demo12Activity extends AppCompatActivity {
     ImageView crossTickView;
     @BindView(R.id.plusminus)
     ImageView plusMinusView;
-    //    @BindView(R.id.arrowoverflow) ImageView arrowoverflowView;
+    @BindView(R.id.arrowoverflow)
+    ImageView arrowoverflowView;
     private boolean isChecked;
 
     @Override
@@ -33,7 +34,7 @@ public class Demo12Activity extends AppCompatActivity {
         drawerView.setImageState(stateSet, true);
         crossTickView.setImageState(stateSet, true);
         plusMinusView.setImageState(stateSet, true);
-//        arrowoverflowView.setImageState(stateSet, true);
+        arrowoverflowView.setImageState(stateSet, true);
     }
 
 
