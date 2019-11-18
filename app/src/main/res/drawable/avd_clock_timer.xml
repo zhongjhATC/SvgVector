@@ -38,7 +38,8 @@
                     android:valueFrom="M 24 12 L 0 12 L 0 24 L 24 24 Z"
                     android:valueTo="M 24 12 L 0 12 L 0 24 L 24 24 Z"
                     android:valueType="pathType" />
-                <!-- 因为333毫秒旋转后，本身的下半部就变成上半部，上半部变成下半部，所以下半部全黑到上半部全黑，完成了这个黑色的过渡动画 -->
+                <!-- 1. 因为333毫秒旋转后，本身的下半部就变成上半部，上半部变成下半部，所以下半部全黑到上半部全黑，完成了这个黑色的过渡动画 -->
+                <!-- 2. 每次点击，动画都是重复的下半部全黑到上半部全黑 -->
                 <objectAnimator
                     android:duration="1000"
                     android:interpolator="@android:interpolator/fast_out_slow_in"

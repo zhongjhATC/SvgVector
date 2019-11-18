@@ -4,6 +4,8 @@
     android:tint="?attr/colorControlNormal"
     android:viewportWidth="24"
     android:viewportHeight="24">
+
+    <!-- 先用空沙漏划分成上下两部分 -->
     <group
         android:name="hourglass_frame"
         android:scaleX="0.7"
@@ -49,7 +51,7 @@
             android:name="hourglass_fill_pivot"
             android:translateX="-12"
             android:translateY="-12">
-            <!-- 整图下半部分是黑的 -->
+            <!-- clip-path意思是剪下下半部分的，留下下半部分的 -->
             <clip-path
                 android:name="mask_1"
                 android:pathData="M 24,13.3999938965 c 0,0 -24,0 -24,0 c 0,0 0,10.6000061035 0,10.6000061035 c 0,0 24,0 24,0 c 0,0 0,-10.6000061035 0,-10.6000061035 Z" />

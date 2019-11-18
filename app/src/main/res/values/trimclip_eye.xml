@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- 这是几乎遮挡了所有区域，除了左上角泄露一点点 -->
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <!-- 剪切的区域，即是除了斜杠的其他区域 -->
+    <string name="path_password_eye_mask_strike_through">M 2 4.27 L 19.73 22 L 22.27 19.46 L 4.54 1.73 L 4.54 1 L 23 1 L 23 23 L 1 23 L 1 4.27 Z</string>
+    <!-- 可视化的眼睛 -->
+    <string name="path_password_eye">M 12 4.5 C 7 4.5 2.73 7.61 1 12 C 2.73 16.39 7 19.5 12 19.5 C 17 19.5 21.27 16.39 23 12 C 21.27 7.61 17 4.5 12 4.5 Z M 12 17 C 9.24 17 7 14.76 7 12 C 7 9.24 9.24 7 12 7 C 14.76 7 17 9.24 17 12 C 17 14.76 14.76 17 12 17 Z M 12 9 C 10.34 9 9 10.34 9 12 C 9 13.66 10.34 15 12 15 C 13.66 15 15 13.66 15 12 C 15 10.34 13.66 9 12 9 Z</string>
+    <!-- 单独的斜杠 -->
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <integer name="show_password_duration">200</integer>
+    <integer name="hide_password_duration">320</integer>
+
+</resources>
