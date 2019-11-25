@@ -46,7 +46,7 @@
         </aapt:attr>
     </target>
 
-    <!-- 这个动画用于渐隐斜杠 -->
+    <!-- 这个动画用于渐显斜杠 -->
     <target android:name="strike_through">
         <aapt:attr name="android:animation">
             <objectAnimator
