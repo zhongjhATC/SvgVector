@@ -33,7 +33,7 @@
         </vector>
     </aapt:attr>
 
-    <!-- 这个动画从 全部遮住区域 到 剪切区域 -->
+    <!-- 这个动画从 全部遮住区域 到 剪切斜杠区域 -->
     <target android:name="eye_mask">
         <aapt:attr name="android:animation">
             <objectAnimator
