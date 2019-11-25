@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Demo14Activity"></activity>
+        <activity android:name=".Demo14Activity" />
         <activity android:name=".Demo13Activity" />
         <activity android:name=".Demo12Activity" />
         <activity android:name=".Demo11Activity" />
@@ -30,6 +30,7 @@
         </activity>
         <activity android:name=".Demo1Activity" />
         <activity android:name=".Demo2Activity" />
+        <activity android:name=".Demo15Activity"></activity>
     </application>
 
 </manifest>

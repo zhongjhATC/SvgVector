@@ -94,6 +94,12 @@
             android:layout_height="wrap_content"
             android:text="第十四个例子" />
 
+        <Button
+            android:id="@+id/btnActivity15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第十五个例子" />
+
     </LinearLayout>
 
 </ScrollView>
