@@ -21,7 +21,7 @@
     android:strokeWidth="2"
     android:trimPathEnd="0"/>
 
-  <!-- Left broken heart, need group to set pivot for rotation anim. -->
+  <!-- 左边心碎图(有锯齿的)，需要group设置旋转轴动画。 -->
   <group
     android:name="broken_heart_left_group"
     android:pivotX="28"
@@ -34,7 +34,7 @@
 
   </group>
 
-  <!-- Right broken heart. -->
+  <!-- 右边心碎图(有锯齿的)，需要group设置旋转轴动画。 -->
   <group
     android:name="broken_heart_right_group"
     android:pivotX="28"

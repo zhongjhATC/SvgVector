@@ -1,8 +1,7 @@
-<!-- 爱心 转换至 空爱心的图 -->
+<!-- 爱心：这是用有锯齿的图片 转换至 空爱心的图 -->
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/vd_trimclip_heart_break">
-
 
     <!-- 各自旋转角度并淡出两个破碎的部分 -->
     <target android:name="broken_heart_left_group">
