@@ -22,15 +22,15 @@ public class Demo16Activity extends AppCompatActivity {
         ButterKnife.bind(this);
 //        VectorDrawable vectorDrawable = new VectorDrawable();
 
-        ((Animatable) ((ImageView) findViewById(R.id.imgFaceBox)).getDrawable()).start();
+        ((Animatable) (imgFaceBox).getDrawable()).start();
 
-        findViewById(R.id.imgFaceBox).setOnClickListener(new View.OnClickListener() {
+        imgFaceBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 //                Animator animator = AnimatorInflater.loadAnimator(Demo16Activity.this, R.animator.alpha);
 //                animator.setTarget(findViewById(R.id.imgFaceBox));
 //                animator.start();
-                ((Animatable) ((ImageView) findViewById(R.id.imgFaceBox)).getDrawable()).start();
+                ((Animatable) (imgFaceBox).getDrawable()).start();
             }
         });
     }

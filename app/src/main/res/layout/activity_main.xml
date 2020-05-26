@@ -14,91 +14,91 @@
             android:id="@+id/btnActivity1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第一个例子" />
+            android:text="第一个例子：基础绘制" />
 
         <Button
             android:id="@+id/btnActivity2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第二个例子" />
+            android:text="第二个例子：放大/旋转/移动 转换各例子" />
 
         <Button
             android:id="@+id/btnActivity3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第三个例子" />
+            android:text="第三个例子：展开折叠效果" />
 
         <Button
             android:id="@+id/btnActivity4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第四个例子" />
+            android:text="第四个例子：闹钟振动" />
 
         <Button
             android:id="@+id/btnActivity5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第五个例子" />
+            android:text="第五个例子：单选按钮选择效果" />
 
         <Button
             android:id="@+id/btnActivity6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第六个例子" />
+            android:text="第六个例子：线性进度" />
 
         <Button
             android:id="@+id/btnActivity7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第七个例子" />
+            android:text="第七个例子：指纹" />
 
         <Button
             android:id="@+id/btnActivity8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第八个例子" />
+            android:text="第八个例子：搜索过渡到回退" />
 
         <Button
             android:id="@+id/btnActivity9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第九个例子" />
+            android:text="第九个例子：Android Design文字动画" />
 
         <Button
             android:id="@+id/btnActivity10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第十个例子" />
+            android:text="第十个例子：IO16文字动画" />
 
         <Button
             android:id="@+id/btnActivity11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第十一个例子" />
+            android:text="第十一个例子：圆形进度" />
 
         <Button
             android:id="@+id/btnActivity12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第十二个例子" />
+            android:text="第十二个例子：4个变形图标" />
 
         <Button
             android:id="@+id/btnActivity13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第十三个例子" />
+            android:text="第十三个例子：沙漏转换动画" />
 
         <Button
             android:id="@+id/btnActivity14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第十四个例子" />
+            android:text="第十四个例子：眼睛开关动画" />
 
         <Button
             android:id="@+id/btnActivity15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="第十五个例子" />
+            android:text="第十五个例子：爱心填充粉碎动画" />
 
         <Button
             android:id="@+id/btnActivity16"
