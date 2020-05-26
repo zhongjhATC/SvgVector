@@ -2,7 +2,7 @@
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/vd_blue_face_box">
 
-    <!-- https://juejin.im/post/5c0b3ac8f265da611d6678ee -->
+    <!-- https://juejin.im/post/5c0b3ac8f265da611d6678ee   -->
     <target android:name="right_top_line1">
         <aapt:attr name="android:animation">
             <objectAnimator
