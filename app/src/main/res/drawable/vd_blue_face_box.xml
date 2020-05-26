@@ -18,27 +18,33 @@
 
     <group android:name="left_top_line">
         <path
+            android:name="left_top_line1"
             android:fillColor="#2bc7e5"
             android:pathData="M0.03,0h24v4h-24z" />
         <path
+            android:name="left_top_line2"
             android:fillColor="#2bc7e5"
             android:pathData="M4,0l-0,24l-4,0l-0,-24z" />
     </group>
 
     <group android:name="left_bottom_line">
         <path
+            android:name="left_bottom_line1"
             android:fillColor="#2bc7e5"
             android:pathData="M0.02,554.97l0,-24l4,-0l0,24z" />
         <path
+            android:name="left_bottom_line2"
             android:fillColor="#2bc7e5"
             android:pathData="M0.03,551h24v4h-24z" />
     </group>
 
     <group android:name="right_bottom_line">
         <path
+            android:name="right_bottom_line1"
             android:fillColor="#2bc7e5"
             android:pathData="M555.08,555.02l-24,-0l-0,-4l24,-0z" />
         <path
+            android:name="right_bottom_line2"
             android:fillColor="#2bc7e5"
             android:pathData="M551,555.01l0,-24l4,-0l0,24z" />
     </group>
