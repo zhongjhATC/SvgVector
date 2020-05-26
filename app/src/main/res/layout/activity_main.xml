@@ -100,6 +100,12 @@
             android:layout_height="wrap_content"
             android:text="第十五个例子" />
 
+        <Button
+            android:id="@+id/btnActivity16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第十六个例子：不停闪现动画" />
+
     </LinearLayout>
 
 </ScrollView>

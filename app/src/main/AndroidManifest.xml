@@ -30,7 +30,8 @@
         </activity>
         <activity android:name=".Demo1Activity" />
         <activity android:name=".Demo2Activity" />
-        <activity android:name=".Demo15Activity"></activity>
+        <activity android:name=".Demo15Activity"/>
+        <activity android:name=".Demo16Activity"/>
     </application>
 
 </manifest>

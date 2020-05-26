@@ -1,9 +1,9 @@
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:drawable="@drawable/vd_clock_alarm">
+    android:drawable="@drawable/vd_blue_face_box">
 
     <!-- 只针对button进行抖动的动画，从0-8一直来回抖动，最终回到0 -->
-    <target android:name="button">
+    <target android:name="right_top_line">
         <aapt:attr name="android:animation">
             <set android:ordering="sequentially"> <!-- 顺序动画 -->
                 <objectAnimator

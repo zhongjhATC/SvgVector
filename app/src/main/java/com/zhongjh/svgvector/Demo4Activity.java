@@ -14,6 +14,7 @@ public class Demo4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo4);
 
+
         findViewById(R.id.alarm).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
